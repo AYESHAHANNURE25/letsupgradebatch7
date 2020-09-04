@@ -1,0 +1,252 @@
+
+LIST
+
+>>> lst=['ayeshu','25','2001'];
+>>> lst
+['ayeshu', '25', '2001']
+
+
+>>> lst.append('pune');
+>>> lst
+['ayeshu', '25', '2001', 'pune']
+
+
+>>> lst.remove('25');
+>>> lst
+['ayeshu', '2001', 'pune']
+
+>>> lst=['ayesha','hannure','pune','25'];
+>>> lst
+['ayesha', 'hannure', 'pune', '25']
+
+
+>>> a=lst.copy();
+>>> a
+['ayesha', 'hannure', 'pune', '25']
+
+
+>>> lst.count('ayesha');
+1
+
+>>> lst.pop(0);
+'ayesha'
+
+
+>>> lst1=[1,2,3,4];
+>>> lst
+['hannure', 'pune', '25']
+
+>>> lst1
+[1, 2, 3, 4]
+
+>>> lst.extend(lst1);
+>>> lst
+['hannure', 'pune', '25', 1, 2, 3, 4]
+
+
+
+>>> #DICTIONARY
+
+
+>>> dit={"name":"aisha","age":"18","city":"pune"}
+>>> dit
+{'name': 'aisha', 'age': '18', 'city': 'pune'}
+
+
+>>> dit.update({"city":"mumbai"})
+>>> dit
+{'name': 'aisha', 'age': '18', 'city': 'mumbai'}
+
+
+>>> dit.keys();
+dict_keys(['name', 'age', 'city'])
+
+
+>>> dit.clear();
+>>> dit
+{}
+
+>>> dit={"name":"aisha","age":"18","city":"pune"}
+>>> dit
+{'name': 'aisha', 'age': '18', 'city': 'pune'}
+
+>>> x=dit.copy();
+>>> x
+{'name': 'aisha', 'age': '18', 'city': 'pune'}
+
+
+>>> y=1
+>>> y
+1
+
+>>> dit1=dit.fromkeys(x,y);
+>>> dit1
+{'name': 1, 'age': 1, 'city': 1}
+
+
+>>> dit.values();
+dict_values(['aisha', '18', 'pune'])
+
+
+>>> dit.get("age");
+'18'
+
+
+>>> dit.setdefault("name","ayesha");
+'aisha'
+
+
+>>> dit.setdefault("age","18");
+'18'
+
+
+
+>>> #SET
+
+   >>> set={"python","learn",2,4,6,8}
+>>> set
+{2, 'python', 4, 6, 8, 'learn'}
+
+
+>>> set.add("learnwithsai");
+>>> set
+{2, 'python', 4, 6, 'learnwithsai', 8, 'learn'}
+
+
+>>> set.add('learnwithsai');
+>>> set
+{2, 'python', 4, 6, 'learnwithsai', 8, 'learn'}
+
+
+>>> set.clear();
+>>> set
+set()
+
+
+>>> set={"apple","healthy","50"};
+>>> set
+{'healthy', '50', 'apple'}
+
+>>> set.copy();
+{'healthy', '50', 'apple'}
+
+
+>>> a={"stay","home","staySafe","COVID=19"};
+>>> a
+{'stay', 'COVID=19', 'staySafe', 'home'}
+
+
+>>> b=set.copy();
+>>> b
+{'healthy', '50', 'apple'}
+
+
+>>> c=a.difference(b);
+>>> c
+{'stay', 'COVID=19', 'staySafe', 'home'}
+
+
+>>> a.difference_update(b);
+>>> a
+{'stay', 'COVID=19', 'staySafe', 'home'}
+
+
+>>> x={1,2,3,4,5}
+>>> y={4,5,6,7}
+>>> x
+{1, 2, 3, 4, 5}
+>>> y
+{4, 5, 6, 7}
+
+
+>>> z=x.intersection(y)
+>>> z
+{4, 5}
+
+
+>>> x.intersection_update(y)
+>>> x
+{4, 5} 
+>>> z=x.isdisjoint(y);
+>>> z
+False
+
+>>> z=x.isdisjoint(y)
+>>> z
+False
+
+
+>>> z=x.issubset(y)
+>>> z
+True
+
+
+>>> z=x.issuperset(y);
+>>> z
+False
+
+
+>>> x.pop();
+4
+
+
+>>> y.pop()
+4
+
+
+>>> y
+{5, 6, 7}
+
+>>> z=x.symmetric_difference(y);
+>>> z
+{5, 6, 7}
+
+
+>>> x.symmetric_difference_update(y)
+>>> x
+{5, 6, 7}
+
+
+>>> z=x.union(y)
+>>> z
+{5, 6, 7}
+
+
+>>> #STRING
+
+
+>>> str1='Python';
+>>> str1
+'Python'
+
+>>> str2='programming';
+>>> str2;
+'programming'
+
+>>> str1.capitalize();
+'Python'
+
+>>> str2.capitalize();
+'Programming'
+
+>>> str1.casefold();
+'python'
+
+>>> str2.casefold();
+'programming'
+
+>>> str1.center(12);
+'   Python   '
+>>> 
+
+>>> str2.center(15);
+'  programming  '
+
+>>> str1.count("0");
+0
+>>> str1.encode();
+b'Python'
+>>> str2.encode();
+b'programming'
+>>> str1.endswith("!");
+False
